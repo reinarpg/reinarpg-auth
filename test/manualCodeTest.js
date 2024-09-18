@@ -1,9 +1,9 @@
 // Just importing these will run the code ; any exceptions will crash script
 process.argv = ['', '', 'user@example.com']
 const TESTS = [
-  ['xbox', 'prismarine-auth/examples/xbox/basic'],
-  ['minecraft bedrock edition', 'prismarine-auth/examples/mcpc/deviceCode'],
-  ['minecraft java edition', 'prismarine-auth/examples/mcpc/deviceCode']
+  ['xbox', 'reinarpg-auth/examples/xbox/basic'],
+  ['minecraft bedrock edition', 'reinarpg-auth/examples/mcpc/deviceCode'],
+  ['minecraft java edition', 'reinarpg-auth/examples/mcpc/deviceCode']
 ]
 
 console.log('Running device code tests')

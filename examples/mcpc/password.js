@@ -1,4 +1,4 @@
-const { Authflow } = require('prismarine-auth')
+const { Authflow } = require('reinarpg-auth')
 
 if (process.argv.length !== 5) {
   console.log('Usage: node password.js <username> <password> <cacheDirectory>')

@@ -1,14 +1,14 @@
-# prismarine-auth
-[![NPM version](https://img.shields.io/npm/v/prismarine-auth.svg)](http://npmjs.com/package/prismarine-auth)
-[![Build Status](https://github.com/PrismarineJS/prismarine-auth/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-auth/actions?query=workflow%3A%22CI%22)
+# reinarpg-auth
+[![NPM version](https://img.shields.io/npm/v/reinarpg-auth.svg)](http://npmjs.com/package/reinarpg-auth)
+[![Build Status](https://github.com/PrismarineJS/reinarpg-auth/workflows/CI/badge.svg)](https://github.com/PrismarineJS/reinarpg-auth/actions?query=workflow%3A%22CI%22)
 [![Official Discord](https://img.shields.io/static/v1.svg?label=PrismarineJS&message=Discord&color=blue&logo=discord)](https://discord.gg/GsEFRM8)
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/prismarine-auth)
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/reinarpg-auth)
 
 Quickly and easily obtain auth tokens to authenticate with Microsoft/Xbox/Minecraft/Mojang
 
 ## Installation
 ```shell
-npm install prismarine-auth
+npm install reinarpg-auth
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ npm install prismarine-auth
 
 ### getMsaToken
 ```js
-const { Authflow, Titles } = require('prismarine-auth')
+const { Authflow, Titles } = require('reinarpg-auth')
 
 const userIdentifier = 'unique identifier for caching'
 const cacheDir = './' // You can leave this as undefined unless you want to specify a caching directory
@@ -53,7 +53,7 @@ See [docs/API.md](docs/API.md)
 
 ### getMinecraftJavaToken
 ```js
-const { Authflow, Titles } = require('prismarine-auth')
+const { Authflow, Titles } = require('reinarpg-auth')
 
 const userIdentifier = 'any unique identifier'
 const cacheDir = './' // You can leave this as undefined unless you want to specify a caching directory
@@ -80,7 +80,7 @@ flow.getMinecraftJavaToken({ fetchProfile: true }).then(console.log)
 See [docs/API.md](docs/API.md) and [example](examples).
 
 ### More
-[View more examples here](https://github.com/PrismarineJS/prismarine-auth/tree/master/examples).
+[View more examples here](https://github.com/PrismarineJS/reinarpg-auth/tree/master/examples).
 
 See the [types](./index.d.ts) to checkout the full API.
 
@@ -90,7 +90,7 @@ See [docs/API.md](docs/API.md)
 
 ## Debugging
 
-You can enable some debugging output using the `DEBUG` enviroment variable. Through node.js, you can add `process.env.DEBUG = 'prismarine-auth'` at the top of your code.
+You can enable some debugging output using the `DEBUG` enviroment variable. Through node.js, you can add `process.env.DEBUG = 'reinarpg-auth'` at the top of your code.
 
 
 ## Testing

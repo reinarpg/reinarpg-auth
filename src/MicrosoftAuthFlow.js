@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
-const debug = require('debug')('prismarine-auth')
+const debug = require('debug')('reinarpg-auth')
 
 const { createHash } = require('./common/Util')
 const { Endpoints, msalConfig } = require('./common/Constants')

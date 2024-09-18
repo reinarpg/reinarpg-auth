@@ -1,4 +1,4 @@
-const { Authflow } = require('prismarine-auth')
+const { Authflow } = require('reinarpg-auth')
 
 const doAuth = () => {
   const flow = new Authflow('test', './', { flow: 'msal' })

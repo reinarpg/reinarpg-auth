@@ -1,5 +1,5 @@
 const msal = require('@azure/msal-node')
-const debug = require('debug')('prismarine-auth')
+const debug = require('debug')('reinarpg-auth')
 
 class MsaTokenManager {
   constructor (msalConfig, scopes, cache) {

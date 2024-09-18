@@ -1,4 +1,4 @@
-const { Authflow } = require('prismarine-auth')
+const { Authflow } = require('reinarpg-auth')
 const crypto = require('crypto')
 const curve = 'secp384r1'
 

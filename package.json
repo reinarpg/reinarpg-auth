@@ -1,5 +1,5 @@
 {
-  "name": "prismarine-auth",
+  "name": "reinarpg-auth",
   "version": "2.5.0",
   "description": "Authentication library for Microsoft, Xbox Live, and Minecraft with caching support",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrismarineJS/prismarine-auth.git"
+    "url": "git+https://github.com/PrismarineJS/reinarpg-auth.git"
   },
   "keywords": [
     "prismarine",
@@ -21,14 +21,14 @@
   "author": "Romain Beaumont",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PrismarineJS/prismarine-auth/issues"
+    "url": "https://github.com/PrismarineJS/reinarpg-auth/issues"
   },
-  "homepage": "https://github.com/PrismarineJS/prismarine-auth#readme",
+  "homepage": "https://github.com/PrismarineJS/reinarpg-auth#readme",
   "devDependencies": {
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "mocha": "^10.0.0",
-    "prismarine-auth": "file:.",
+    "reinarpg-auth": "file:.",
     "standard": "^17.0.0"
   },
   "dependencies": {

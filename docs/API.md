@@ -1,4 +1,4 @@
-## prismarine-auth
+## reinarpg-auth
 
 See the [types](../index.d.ts) for additional information on the exposed API.
 
@@ -18,7 +18,7 @@ This is the main exposed class you interact with. Every instance holds its own t
     * `msal` - Generates an XSTS token using MSAL (Microsoft Authentication Library) which allows for user authentication only. Use this auth flow for custom Azure apps.
     * `sisu` - See [What does sisu flow do ?](#what-does-sisu-flow-do) for more info.
   * `password` (optional) If you specify this option, we use password based auth. Note this may be unreliable.
-  * `authTitle` - The client ID for the service you are logging into. When using the `msal` flow, this is your custom Azure client token. When using `live`, this is the Windows Live SSO client ID - used when authenticating as a Windows app (such as a vanilla Minecraft client). For a list of titles, see `require('prismarine-auth').Titles` and FAQ section below for more info. (Required if using `sisu` or `live` flow, on `msal` flow we fallback to a default client ID.)
+  * `authTitle` - The client ID for the service you are logging into. When using the `msal` flow, this is your custom Azure client token. When using `live`, this is the Windows Live SSO client ID - used when authenticating as a Windows app (such as a vanilla Minecraft client). For a list of titles, see `require('reinarpg-auth').Titles` and FAQ section below for more info. (Required if using `sisu` or `live` flow, on `msal` flow we fallback to a default client ID.)
   * `deviceType` (optional) if specifying an authTitle, the device type to auth as. For example, `Win32`, `iOS`, `Android`, `Nintendo`
   * `forceRefresh` (optional) boolean - Clear all cached tokens for the specified `username` to get new ones on subsequent token requests
 * `codeCallback` (optional) The callback to call when doing device code auth. Otherwise, the code will be logged to the console.
@@ -36,7 +36,7 @@ This is the main exposed class you interact with. Every instance holds its own t
 
 Example usage :
 ```js
-const { Authflow } = require('prismarine-auth')
+const { Authflow } = require('reinarpg-auth')
 const flow = new Authflow() // No parameters needed
 flow.getXboxToken().then(console.log)
 ``````
@@ -60,16 +60,16 @@ The return object are multiple JWTs returned from the auth server, from both the
 
 Example usage :
 ```js
-const { Authflow, Titles } = require('prismarine-auth')
+const { Authflow, Titles } = require('reinarpg-auth')
 const flow = new Authflow('', './', { authTitle: Titles.MinecraftNintendoSwitch, deviceType: 'Nintendo', flow: 'live' })
 flow.getMinecraftJavaToken().then(console.log)
 ```
 
 ### Cache
 
-prismarine-auth uses caching to ensure users don't have to constantly sign in when authenticating to Microsoft/Xbox services. By default, if you pass a String value to Authflow's `cacheDir` function call argument, we'll use the local file system to store and retrieve data to build a cache. However, in some circumstances, you may not have access to the local file system, or have a more advanced use-case that requires database retreival, for example. In these scenarios, you can implement cache storage and retreval yourself to match your needs.
+reinarpg-auth uses caching to ensure users don't have to constantly sign in when authenticating to Microsoft/Xbox services. By default, if you pass a String value to Authflow's `cacheDir` function call argument, we'll use the local file system to store and retrieve data to build a cache. However, in some circumstances, you may not have access to the local file system, or have a more advanced use-case that requires database retreival, for example. In these scenarios, you can implement cache storage and retreval yourself to match your needs.
 
-If you pass a function to Authflow's `cacheDir` function call argument, you are expected to return a *factory method*, which means your function should instantiate and return a class or an object that implements the interface [defined here](https://github.com/PrismarineJS/prismarine-auth/blob/cf0957495458dc7cb0f2579d97b13d682be27d8f/index.d.ts#L125) and copied below:
+If you pass a function to Authflow's `cacheDir` function call argument, you are expected to return a *factory method*, which means your function should instantiate and return a class or an object that implements the interface [defined here](https://github.com/PrismarineJS/reinarpg-auth/blob/cf0957495458dc7cb0f2579d97b13d682be27d8f/index.d.ts#L125) and copied below:
 
 
 ```typescript

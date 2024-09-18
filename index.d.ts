@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import { KeyObject } from 'crypto'
 
-declare module 'prismarine-auth' {
+declare module 'reinarpg-auth' {
   export class Authflow {
     /**
      * Creates a new Authflow instance, which holds its own token cache

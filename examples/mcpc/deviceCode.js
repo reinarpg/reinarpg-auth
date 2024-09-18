@@ -1,4 +1,4 @@
-const { Authflow, Titles } = require('prismarine-auth')
+const { Authflow, Titles } = require('reinarpg-auth')
 
 const [, , username, cacheDir] = process.argv
 

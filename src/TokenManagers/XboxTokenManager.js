@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 
 const XboxLiveAuth = require('@xboxreplay/xboxlive-auth')
-const debug = require('debug')('prismarine-auth')
+const debug = require('debug')('reinarpg-auth')
 const { SmartBuffer } = require('smart-buffer')
 const fetch = require('node-fetch')
 

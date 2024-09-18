@@ -4,7 +4,7 @@ const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised)
 const { expect } = chai
 
-const { Authflow, Titles } = require('prismarine-auth')
+const { Authflow, Titles } = require('reinarpg-auth')
 
 describe('password authentication', async () => {
   it('should fail if not given a valid password', async () => {

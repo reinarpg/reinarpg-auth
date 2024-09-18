@@ -1,4 +1,4 @@
-const debug = require('debug')('prismarine-auth')
+const debug = require('debug')('reinarpg-auth')
 const fetch = require('node-fetch')
 const crypto = require('crypto')
 
